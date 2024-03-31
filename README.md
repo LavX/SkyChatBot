@@ -27,7 +27,7 @@ The SkyChatBot project leverages Vanilla JavaScript and Bootstrap for the fronte
 
 1. **Clone the SkyChatBot Repository**
    ```
-   git clone https://github.com/YourUsername/SkyChatBot.git
+   git clone https://github.com/LavX/SkyChatBot.git
    ```
 
 2. **Navigate to the `SkyChatBotBackend`**
