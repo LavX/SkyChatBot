@@ -1,21 +1,19 @@
 # SkyChatBot
 
-SkyChatBot is an innovative chat widget that enhances website visitor interactions through real-time messaging. With its Python backend and seamless integration with a 3rd party API, it facilitates instant communication between site visitors and businesses, enriching the user experience without the need for user authentication.
+🚀 **Overview**
 
-## Overview
+The SkyChatBot project leverages Vanilla JavaScript and Bootstrap for the frontend, creating a user-friendly interface, and Flask for the Python backend to handle messaging. The architecture supports seamless integration with SkypeMessageAPI for message processing. The project consists of the `SkyChatBotBackend` directory for backend operations and the `SkyChatBotWidget` directory for frontend components, ensuring organized development and easy maintenance.
 
-The SkyChatBot project combines Vanilla JavaScript and Bootstrap for a user-friendly frontend, with a Flask-powered Python backend for efficient message processing. This architecture ensures the chat widget is both effective and easy to integrate into any website. The project is structured into two main directories: `SkyChatBotBackend` for the backend application and `SkyChatBotWidget` for the frontend widget, promoting a clear separation of concerns and streamlined development.
+🌟 **Features**
 
-## Features
+- 📡 Real-time Interaction: Users can interact in real-time, sending and receiving messages instantly.
+- 🔒 Session Management: Integration of session IDs for consistent user experiences across chat sessions.
+- 🎨 Dynamic UI: Customizable and interactive user interface that adapts to different devices and screen sizes.
+- 🔐 Environment Configuration: Support for `.env` files for secure and flexible backend configuration.
+- 🤖 Interactive Prompts: AI-driven prompts to engage users and initiate conversations.
+- ⚠️ Error Handling: Robust error handling mechanisms to inform users and maintain engagement even when third-party services are down.
 
-- **Real-time Messaging**: Allows users to send and receive messages instantly.
-- **Session Management**: Tracks user sessions with unique IDs for a cohesive conversation experience.
-- **Customizable UI**: Offers a customizable user interface, ensuring a visually appealing and interactive chat experience.
-- **Environment Variable Support**: Facilitates easy backend configuration through a `.env` file, enhancing security and flexibility.
-- **AI-Initiated Interaction**: Automatically prompts users with a welcome message from the AI, encouraging interaction.
-- **Responsive Design**: Ensures the chat widget and buttons are appropriately sized and positioned for optimal user experience across devices.
-
-## Getting Started
+📋 **Getting Started**
 
 ### Requirements
 
@@ -23,16 +21,49 @@ The SkyChatBot project combines Vanilla JavaScript and Bootstrap for a user-frie
 - Flask
 - Requests library
 - python-dotenv
-- A modern web browser
+- Vanilla JavaScript-enabled web browser
 
 ### Quickstart
 
-1. Clone the repository to your local machine.
-2. Install the required Python packages (`flask`, `requests`, `python-dotenv`) using `pip`.
-3. Configure your third-party API credentials in the `.env` file within the `SkyChatBotBackend` directory.
-4. Launch the backend server with `python app.py` from within the `SkyChatBotBackend` directory.
-5. Open `SkyChatBotWidget/index.html` in a web browser to start interacting with the chat widget.
+1. **Clone the SkyChatBot Repository**
+   ```
+   git clone https://github.com/YourUsername/SkyChatBot.git
+   ```
 
-### License
+2. **Navigate to the `SkyChatBotBackend`**
+   - Install dependencies:
+     ```
+     cd SkyChatBotBackend
+     pip install -r requirements.txt
+     ```
 
-Copyright (c) 2024. All rights reserved.
+3. **Set Up the SkypeMessageAPI (3rd Party API)**
+   - Clone the SkypeMessageAPI repository:
+     ```
+     git clone https://github.com/LavX/SkypeMessageAPI.git
+     ```
+   - Follow the `README.md` in the SkypeMessageAPI project to set up the API, including the `.env` file configuration with your Skype credentials.
+
+4. **Integrate SkypeMessageAPI**
+   - Ensure the `SkyChatBotBackend` is configured to use the SkypeMessageAPI for sending messages. Update the `.env` file in `SkyChatBotBackend` with the necessary API endpoint and credentials obtained from setting up the SkypeMessageAPI.
+
+5. **Start the Backend Server**
+   ```
+   python app.py
+   ```
+
+6. **Using the Chat Widget**
+   - Open the `SkyChatBotWidget/index.html` file in your browser to use the chat widget.
+
+👐 **Contributing**
+
+Contributions, issues, and feature requests are welcome. For more information on how to contribute, please check our issues page.
+
+📜 **License**
+
+Distributed under the MIT License. See LICENSE for more information.
+
+📬 **Contact**
+
+Laszlo A. Toth - lavx@lavx.hu
+Project Link: https://github.com/LavX/SkyChatBot
