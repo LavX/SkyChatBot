@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyChatBot</title>
+    <!-- Bootstrap CDN for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="chat-widget" class="chat-widget">
+        <!-- Chat header with updated classes for buttons -->
+        <div id="chat-header" class="chat-header">
+            <!-- Title of the chat widget with new class -->
+            <span class="chat-title">SkyChatBot</span>
+            <!-- Container for buttons to ensure proper alignment -->
+            <div class="header-buttons">
+                <button id="minimize-chat" class="header-button">&#x2013;</button>
+                <button id="resize-chat" class="header-button">&#x1F5D6;</button>
+            </div>
+        </div>
+        <div id="messages" class="messages"></div>
+        <input type="text" id="message-input" placeholder="Type a message...">
+        <button id="send-message" class="btn btn-primary">Send</button>
+        <!-- Loading indicator added below the Send button -->
+        <div id="loading-indicator" style="display: none;">Awaiting response...</div>
+    </div>
+    <button id="chat-btn" class="btn btn-primary">Chat with AI</button>
+    <!-- Custom script -->
+    <script src="./script.js"></script>
+</body>
+</html>

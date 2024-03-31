@@ -1,0 +1,164 @@
+/* Base style for the chat widget */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all .3s ease-in-out;
+}
+
+/* Enlarged chat widget */
+.chat-widget-large {
+    width: 80%;
+    height: 70vh;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 420px) {
+    .chat-widget-large {
+        width: 95%;
+        right: 2.5%;
+    }
+}
+
+/* Style for the chat messages container */
+.messages {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    scroll-behavior: smooth;
+}
+
+/* Adjusted height for enlarged widget */
+.chat-widget-large .messages {
+    height: calc(70vh - 120px);
+}
+
+/* Input and Send button styles */
+#message-input {
+    width: calc(100% - 90px);
+    margin-right: 5px;
+}
+
+#send-message {
+    width: 80px;
+}
+
+/* Chat button style */
+#chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Message bubble styles */
+.message {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.customer-message, .ai-message {
+    padding: 10px;
+    margin: 5px 20% 5px 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.customer-message {
+    background-color: #e7f3ff;
+    text-align: left;
+}
+
+.ai-message {
+    background-color: #ffe7e7;
+    text-align: right;
+    margin: 5px 0 5px 20%;
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Chat header with improved button alignment */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Header button container to ensure proper alignment */
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Header buttons styling for a cohesive look */
+.header-button {
+    background-color: #0066cc; /* Slightly darker to stand out but still cohesive */
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    margin-left: 8px; /* Spacing between buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.header-button:hover {
+    background-color: #0056b3; /* A bit darker on hover for interactive feedback */
+}
+
+.chat-title {
+    flex-grow: 1; /* Allows title to take up the available space */
+    padding: 10px 0; /* Vertical padding to align with buttons */
+}
+
+/* Header buttons styling */
+#resize-chat, #minimize-chat {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+
+/* New CSS class for error messages */
+.error-message {
+    color: red;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffe7e7;
+    text-align: left;
+}
+
+/* Loading indicator styling */
+#loading-indicator {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin-top: 10px;
+}
