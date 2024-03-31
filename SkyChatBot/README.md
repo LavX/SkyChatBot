@@ -67,3 +67,7 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Laszlo A. Toth - lavx@lavx.hu
 Project Link: https://github.com/LavX/SkyChatBot
+
+## Disclaimer
+
+This project is intended for educational purposes only and might violate Skype's or Microsoft's Terms and Conditions. Users should ensure they comply with all relevant policies and regulations when using or deploying this project. The author(s) do not assume any responsibility for any misuse or breach of agreement on the part of the users.
